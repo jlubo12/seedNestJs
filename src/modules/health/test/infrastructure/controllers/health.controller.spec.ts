@@ -16,11 +16,7 @@ describe('HealthController', () => {
     expect(controller).toBeDefined();
   });
 
-  it('Should return "OK" for request on /liveness', () => {
+  it('Should return "OK" for request on /', () => {
     expect(controller.getLivenessProbe()).toEqual('OK');
-  });
-
-  it('Should return "OK" for request on /readiness', () => {
-    expect(controller.getReadinessProbe()).toEqual('OK');
   });
 });
